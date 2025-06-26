@@ -1,1 +1,9 @@
+pandas
+numpy
+shap
 streamlit
+scikit-learn
+matplotlib
+seaborn
+dagshub
+mlflow
