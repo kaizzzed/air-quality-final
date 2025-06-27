@@ -27,6 +27,7 @@ st.set_page_config(
 
 ## Step 01 - Setup
 st.sidebar.title("Air Quality")
+st.sidebar.markdown("By Julia Huang and Derek Xia")
 st.sidebar.image("air.jpeg")
 page = st.sidebar.selectbox("Select Page",[
         "Introduction",
@@ -36,6 +37,7 @@ page = st.sidebar.selectbox("Select Page",[
         "MLflow Runs",
         "Conclusion"
 ])
+
 
 
 st.write("   ")
@@ -60,7 +62,7 @@ with st.container():
         df2 = pd.read_csv("Air_Quality.csv")
 
         st.subheader("01 Introduction")
-        st.markdown("Air pollution causes approximately 7 million premature deaths annually (WHO). This dataset contains records of pollutants and European Air Quality Index (AQI) through January to December 2024 and includes cities from all inhabited continents. Our goal is to predict AQI based on pollutant levels, identify which pollutants most impact AQI, and compare air quality trends across continents.")
+        st.markdown("Air pollution causes approximately 7 million premature deaths annually (WHO). This dataset contains records of pollutants and the European Air Quality Index (AQI) from January to December 2024 and includes cities from all inhabited continents. Our goal is to predict AQI based on pollutant levels, identify which pollutants most impact AQI, and compare air quality trends across continents.")
 
 
         st.markdown("##### Data Preview")
